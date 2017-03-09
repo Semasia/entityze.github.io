@@ -33,6 +33,24 @@
   ga('send', 'pageview');
 
 </script>
+	
+		<!-- Google Analytics Event Tracking -->
+	
+<script>
+/**
+* Function that tracks a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+
 
 		<!-- Facebook Pixel Code -->
 <script>
@@ -232,7 +250,7 @@ src="https://www.facebook.com/tr?id=534664366689715&ev=PageView&noscript=1"
 							<section class="3u 6u(medium) 12u$(small)">
 								<h3>About Semasia</h3>
 								<ul class="unstyled">
-									<li><a href="#">Company, Team & Careers</a></li>
+									<li><a href="https://recruit.zoho.com/recruit/ViewJob.na?digest=6e7M24s.GN0k6yhVm3hnS3vL2Ge87pqiulIl1H.KoL4-&embedsource=Embed" target="_blank" onclick="trackOutboundLink('http://recruit.zoho.com'); return false;">Company, Team & Careers</a></li>
 									<li><a href="#">Press & Beta Customers</a></li>
 									<li><a href="#">Technology & IP</a></li>
 								</ul>
