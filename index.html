@@ -1,312 +1,486 @@
-<!DOCTYPE html>
-<!--
-	Transit by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Semasia - Semantic NLP platform for text analytics applications</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Semasia is a semantic Natural Language Processing (NLP) platform that powers text analytics applications for chat, competitive intelligence, content marketing, data preparation, data pre-processing, data science, machine learning, AI, Artificial Intelligence." />
-		<meta name="keywords" content="NLP, Natural Language Processing, text, text analytics, chat, chatbot, chat analytics, chatbot analytics, text clustering, competitive intelligence, content marketing, content timeline, semantic, semantic analysis, entity linking, data science, predictive modeling, Glove, word2vec, topic modeling, LDA, data preparation, data wrangling, data pre-processing, data science, machine learning, AI, Artificial Intelligence" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
-		</noscript>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Semasia - From Text to Big Data, Fast.</title>
 
-		<!-- Google Analytics -->
-		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/product/">
 
-  ga('create', 'UA-93341707-1', 'auto');
-  ga('send', 'pageview');
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-</script>
-	
-		<!-- Google Analytics Event Tracking -->
-	
-<script>
-/**
-* Function that tracks a click on an outbound link in Analytics.
-* This function takes a valid URL string as an argument, and uses that URL string
-* as the event label. Setting the transport method to 'beacon' lets the hit be sent
-* using 'navigator.sendBeacon' in browser that support it.
-*/
-var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {
-     'transport': 'beacon',
-     'hitCallback': function(){document.location = url;}
-   });
-}
-</script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/b523630b6b.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <style>
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="semasia.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a href="#home"><img src= "images/Semasia_Logo_320X96.png" class="img-fluid" style="background: transparent;"></a>
+    <a class="py-2 d-none d-md-inline-block align-self-center menu" href="#trial">Free Trial</a>
+    <a class="py-2 d-none d-md-inline-block align-self-center menu" href="#features">Features</a>
+    <a class="py-2 d-none d-md-inline-block align-self-center menu" href="#solutions">Solutions</a>
+    <a class="py-2 d-none d-md-inline-block align-self-center menu" href="#about">About</a>
+  </div>
+</nav>
+
+<header>
+<a name ="home">
+<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="images/Background_video_semasia_yellow.mp4" type="video/mp4">
+  </video>
+  <div class="position-relative overflow-hidden p-1 p-lg-5 m-md-1 text-center bg-transparent">
+    <div class="col-md-10 p-lg-5 mx-auto my-auto">
+      <h1 class="display-3 font-weight-bold text-white stroke" style="margin-bottom: 0px;">80% of corporate data is</h1>
+      <h1 class="display-1 font-weight-bold text-white stroke" style="margin-bottom: 0px;">UNSTRUCTURED.</h1>
+      <h2 class="display-5 font-weight-bold text-white stroke">Are you leveraging this data to the full extent -<br> or is it out of sight, out of mind?</h1>
+      <br>
+      <a href="#trial"><button type="button" class="btn btn-primary homepage">Unlock the value of your text assets</button></a>
+      <br>
+</div></div>
+</a>
+</header>
+
+<!-- SECTION - COMPARE -->
+
+<div class="position-relative overflow-hidden p-md-3 m-md-3 text-center bg-dark">
+  <div class="col-md-10 mx-auto my-auto">
+    <h2 class="display-6 font-weight-bold text-white" style="margin-bottom: 0px;">
+    <a name="trial">Convert text into real-world meaning - a.k.a. Entity Linking</a></h2>
+  </div>
+</div>
+
+<div class="my-md-3 pl-md-3 pr-md-3 text-center">
+  <div class="bg-light pt-3 px-3  px-md-3 text-center overflow-hidden">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+      <p class="body font-italic"><br>Not familiar with technical terms like Natural Language Processing,<br>Named Entity Recognition or Entity Linking?<br></p>
+        <a class="btn btn-outline-primary" href="#features">Get the 411 on Semasia</a>
+        <p class="body font-italic"><br></p>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal my-md-3 pl-md-3">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+    <div class="my-1 py-1">
+      <img src ="images/logo_google_cloud_320x96.png"></img>
+      <p class="body"><br>Semasia delivers 41% more accuracy<br>than Google Natural Language API<br>for Entity Linking.</p>
+      <p class="body">Don't just take our word for it:<br>check this undoctored side-by-side comparison.<br><br></p>
+      <a class="btn btn-outline-primary" href="#">Compare Semasia with Google</a>
+      <p class="body"><br><br><br></p>
+    </div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+    <div class="my-1 p-1">
+      <img src ="images/logo_microsoft_azure_320x96.png"></img>
+      <p class="body"><br>Semasia provides 57% more accuracy<br>than Microsoft Azure Cognitive Services<br>when it comes to Entity Linking.</p>
+      <p class="body">Judge for yourself<br>in this undoctored throwdown.<br><br></p>
+      <a class="btn btn-outline-primary" href="#">Compare Semasia with MS Azure</a>
+      <p class="body"><br><br><br></p>
+    </div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+    <div class="my-1 p-1">
+      <img src ="images/Semasia_Logo_320X96.png"></img>
+      <p class="body"><br>What would your own data look like<br>after being processed by Semasia?<br>What entities would be detected?</p>
+        <p class="body">You're only a click away<br> from finding out.<br><br></p>
+        <a class="btn btn-outline-primary" href="#">Try Semasia for free</a>
+        <p class="body"><br><br><br></p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION - FEATURES -->
+
+<div class="position-relative overflow-hidden p-md-3 m-md-3 text-center bg-dark">
+  <div class="col-md-10 mx-auto my-auto">
+    <h2 class="display-6 font-weight-bold text-white" style="margin-bottom: 0px;">
+      <a name ="features">Feature overview - what is Semasia about?</a>
+    </h2>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 pr-md-3 text-center">
+  <div class="bg-light pt-3 px-3  px-md-3 text-center overflow-hidden">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+      <p class="body font-italic">Even if you are not an expert in Machine Learning (ML) or Artificial Intelligence (AI), you are probably aware that recent advances in Natural Language Processing (NLP) are making it easier for computers to “read” and process text data. There are so many different text analytics tools and services out there that even for the technology savvy, it can be difficult to quickly tell them apart from an accuracy and speed standpoint...</p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 pr-md-3 text-center">
+  <div class="bg-light pt-3 px-3  px-md-3 text-center overflow-hidden">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+      <p class="body font-italic">Semasia is different because of its exclusive focus on a particularly difficult NLP task: reliable Entity Linking at scale. It does not replace other NLP tools, but complements them by filling this important gap. Semasia is not going to help you with basic NLP tasks or with sentiment analysis...<br>If you are after state-of-the-art Entity Linking, you are definitely in the right place!</p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+</div>
+
+<!--div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"-->
+<div class="d-flex bd-highlight my-md-3 pl-md-3">
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden"-->
+    <div class="bg-light p-2 w-50 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+      <h5 class="lead font-weight-bold text-light">Semasia</p>
+  </div>
+  <!--div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden"-->
+    <div class="bg-secondary p-2 w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+      <div class="d-flex bd-highlight">
+      <div class="p-2 flex-shrink-1 bd-highlight"><span style="color: White;"><i class="fas fa-link fa-3x"></i></span></div>
+      <div class="p-2 flex-fill bd-highlight"><h5 class="text-white">Entity Disambiguation<br>and Linking</p></div>
+    </div>
+  </div>
+  <!--div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden"-->
+  <div class="bg-secondary p-2 w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+    <div class="d-flex bd-highlight">
+      <div class="p-2 flex-shrink-1 bd-highlight"><span style="color: White;"><i class="fas fa-project-diagram fa-3x"></i></span></div>
+      <div class="p-2 flex-fill bd-highlight"><h5 class="text-white">Structured<br>Knowledge Graph</p></div>
+    </div>
+  </div>
+  <!--div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden"-->
+    <div class="bg-secondary p-2 w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 flex-shrink-1 bd-highlight"><span style="color: White;"><i class="fas fa-cogs fa-3x"></i></span></div>
+        <div class="p-2 flex-fill bd-highlight"><h5 class="text-white">Workflow<br>Connectors</p></div>
+      </div>
+  </div>
+</div>
+
+<!--div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"-->
+<div class="d-flex bd-highlight my-md-3 pl-md-3">
+  <!--div class="bg-danger mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-white text-center overflow-hidden"-->
+  <div class="bg-danger w-50 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <h5 class="text-white text-center">Without<br>Semasia</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-danger text-center">At the risk of oversimplifying: computers usually convert text into mathematical vectors in order to represent language. The size and shape of these vectors are specific to every NLP model - and since people don't speak "vector", a final conversion from vectors back to language is often necessary. </p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-danger text-center">A computer can easily detect that "cat" and "dog" have similar vector representations. Yet, it cannot infer from the vectors alone that while they are both mammals, one belongs to the Felidae family and the other to the Canis familiy - or that a dog's life expectancy ranges from 10 to 13 years.</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+          <p class="small text-danger text-center">More often than not, significant custom development work is required to integrate text analytics tools into new or existing workflows. As a result, text data is often stored in a raw format and is not immediately ready for consumption - calling for subsequent retrieval and processing instead.</p>
+  </div>
+</div>
+
+<!--div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"-->
+<div class="d-flex bd-highlight my-md-3 pl-md-3">
+  <!--div class="bg-success mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-white text-center overflow-hidden"-->
+  <div class="bg-success w-50 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <h5 class="text-white text-center">With<br>Semasia</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-success text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-success text-center">Semasia acts as a bridge between how computers see text (mathematical vectors) and how people process information (semantic concepts). It's flexible and generic enough to adapt to any vector model and it can instantly provide a normalized view between different models.</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-success text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-success text-center">Semasia organizes and connects very large amounts of semantic concepts and data points, from generic real-world knowledge to information that is specific and exclusive to your business. Multiple hierarchies and relationships between concepts can co-exist at the same time.</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-success text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-success text-center">Unlike many NLP tools that target developers, Semasia is designed with people in mind who manage and use data. Semasia integrates seamlessly with your existing data management processes and flows using connectors rather than custom code. Availability: Spring 2020.</p>
+  </div>
+</div>
+
+<!-- SECTION - BUSINESS BENEFITS -->
 
 
-		<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '534664366689715'); // Insert your pixel ID here.
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=534664366689715&ev=PageView&noscript=1"
-/></noscript>
-<!-- DO NOT MODIFY -->
-<!-- End Facebook Pixel Code -->
+<div class="position-relative overflow-hidden p-md-3 m-md-3 text-center bg-dark">
+  <div class="col-md-10 mx-auto my-auto">
+    <h2 class="display-6 font-weight-bold text-white" style="margin-bottom: 0px;">
+    <a name="trial2">Ready to explore further?</a></h2>
+  </div>
+</div>
 
-<!-- Hotjar Tracking Code for www.semasia.biz -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:440607,hjsv:5};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-		
-		
-		</head>
-	<body class="landing">
+<div class="d-md-flex flex-md-equal my-md-3 pl-md-3">
+<div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+  <div class="my-1 p-1">
+    <img src ="images/Semasia_Logo_320X96.png"></img>
+    <p class="body"><br>What would your own data look like<br>after being processed by Semasia?<br>What entities would be detected?</p>
+      <p class="body">You're only a click away<br> from finding out.<br><br></p>
+      <a class="btn btn-outline-primary" href="#">Get your trial code</a>
+  </div>
+</div>
+</div>
 
-		<!-- Header -->
-			<header id="header">
-				<h1><a href="index.html">SEMASIA</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="#access" class="button special">FREE TRIAL</a></li>
-					</ul>
-				</nav>
-			</header>
+<!-- SECTION - BUSINESS BENEFITS -->
 
-		<!-- Banner -->
-			<section id="banner">
-				<h2>Semasia reads,<br>understands and organizes<br>insanely large volumes of text.</h2>
-				<p>Don't waste precious time separating the wheat from the chaff.</p>
-				<ul class="actions">
-					<li>
-						<a href="#products" class="button big">What's in it for me?</a>
-					</li>
-				</ul>
-			</section>
+<div class="position-relative overflow-hidden p-md-3 m-md-3 text-center bg-dark">
+  <div class="col-md-10 mx-auto my-auto">
+    <h2 class="display-6 font-weight-bold text-white" style="margin-bottom: 0px;">
+      <a name="solutions">Business benefits - what difference can Semasia make?</a>
+    </h2>
+  </div>
+</div>
 
-		<!-- Products section -->
-			<section id="products" class="wrapper style1 special">
-				<div class="container">
-					<header class="major">
-						<h2>Semasia Products</h2>
-						<p>There are three areas where Semasia can benefit you and your organization.</p>
-					</header>
-					<div class="row 150%">
-						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color1 fa-comment"></i>
-								<h3>Semasia Chat Explorer</h3>
-								<p>Automatically read, analyze and organize all clients and prospects conversations. Identify patterns and trends. Stop drowning in a growing deluge of messages - start acting on the big picture.<br></p>
-								<p><i>For marketing, sales, and service teams</i></p>
-							</section>
-						</div>
-						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color9 fa-industry"></i>
-								<h3>Semasia Brand Observer</h3>
-								<p>Monitor your competition’s content marketing efforts and get alerts about noteworthy developments. Effortlessly compare your content and theirs to identify areas of opportunity and differentiation.</p>
-								<p><i>For marketing and sales teams</i></p>
-							</section>
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color6 fa-database"></i>
-								<h3>Semasia Dimension Reducer</h3>
-								<p>Build significantly better predictive models for unstructured text information. Unearth meaningful data points and decrease the number of variables to process by several orders of magnitude.<br></p>
-								<p><i>For data scientists and analysts</i></p>
-							</section>
-						</div>
-					</div>
-				</div>
-			</section>
-					
-		<!-- Platform section -->					
-				<section id="platform" class="wrapper style3 special">
-					<header class="major">
-						<h2>A few more things you should know</h2>
-						<p><br>
-						Semasia was designed for ultra-fast, state-of-the-art Natural Language Processing (NLP).<br>
-						Fasten your seat belt, get ready to save time and money and wave goodbye to tedious reading and tagging tasks.
-						<br><br>Semasia goes beyond "dumb" keyword analysis and focuses on actual meaning.<br>It makes a world of difference, even against the text analysis services offered by major cloud vendors.
-						<br><br>¿Habla español? Ou plutôt français ? Semasia speaks multiple languages too.</p>
-						</header>
-				</section>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 pr-md-3 text-center">
+  <div class="bg-light pt-3 px-3  px-md-3 text-center overflow-hidden">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+      <p class="body font-italic">Natural Language Processing and Entity Linking are just means to a business end. Semasia dramatically cuts the time it takes to read, extract meaning from, and organize large volumes of text documents. More importantly, it is fast and scalable enough that you can start doing this systematically instead of cherry-picking after the fact. This may not sound like much, yet it actually brings about a radical change in the way that text data can be managed and analyzed.</p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+</div>
 
-		<!-- Semasia Chat Insight -->
-			<section id="chat" class="wrapper style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>Semasia Chat Explorer</h2>
-						<p>It connects seamlessly to your existing chat tools,<br>
-						and takes mere minutes to read and analyze past conversations.<br>
-						Start connecting the dots and unveiling the hidden patterns.</p>
-					</header>
-					<section class="profiles">
-						<div class="row">
-							<section class="3u 6u(medium) 12u$(xsmall)">
-								<img src="images/logo_intercom_92x92.png" alt="Intercom" />
-								<p><h4>Intercom</h4>
-							</section>
-							<section class="3u 6u$(medium) 12u$(xsmall)">
-								<img src="images/logo_livechat_320x320.png" alt="LiveChat" />
-								<p><h4>LiveChat</h4>
-							</section>
-							<section class="3u 6u(medium) 12u$(xsmall)">
-								<img src="images/logo_liveperson_92x92.png" alt="LivePerson" />
-								<p><h4>LivePerson</h4>
-							</section>
-							<section class="3u$ 6u$(medium) 12u$(xsmall)">
-								<img src="images/logo_zendesk_92x92.png" alt="ZenDesk Chat" />
-								<p><h4>ZenDesk Chat (Zopim)</h4>
-							</section>
-						</div>
-						<p></p>
-					</section>
-				</div>
-			</section>
+<!--div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"-->
+<div class="d-flex bd-highlight my-md-3 pl-md-3">
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden"-->
+    <div class="bg-light p-2 w-50 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+      <h5 class="lead font-weight-bold text-light">Use case</p>
+  </div>
+  <!--div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden"-->
+    <div class="bg-secondary p-2 w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+      <div class="d-flex bd-highlight">
+      <div class="p-2 flex-shrink-1 bd-highlight"><span style="color: White;"><i class="fas fa-clipboard-list fa-3x"></i></span></div>
+      <div class="p-2 flex-fill bd-highlight"><h5 class="text-white">Data<br>Cataloging</p></div>
+    </div>
+  </div>
+  <!--div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden"-->
+  <div class="bg-secondary p-2 w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+    <div class="d-flex bd-highlight">
+      <div class="p-2 flex-shrink-1 bd-highlight"><span style="color: White;"><i class="fas fa-database fa-3x"></i></span></div>
+      <div class="p-2 flex-fill bd-highlight"><h5 class="text-white">Data<br>Science</p></div>
+    </div>
+  </div>
+  <!--div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden"-->
+    <div class="bg-secondary p-2 w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 flex-shrink-1 bd-highlight"><span style="color: White;"><i class="fas fa-user-cog fa-3x"></i></span></div>
+        <div class="p-2 flex-fill bd-highlight"><h5 class="text-white">Other<br>applications</p></div>
+      </div>
+  </div>
+</div>
 
-		<!-- Access -->
-			<section id="access" class="wrapper style1 special">
-					<header class="major">
-						<h2>Get early access to Semasia</h2>
-						<p>Fill the form below and share to move up the list.</p>
-					</header>
-		
-		<script type="text/javascript">
-          window.Maitre = { uuid: "MF0f01eb8085" };
-</script>
-<script data-maitre src='https://maitreapp.co/widget.js' async></script>
-<p>
-			</section>
-			
-		<!-- Four -->	
-<!--			<section id="contact" class="wrapper style3 special">
-				<div class="container">
-					<header class="major">
-						<h2>Questions? Just ask.</h2><p>
-						Semasia can read but it doesn't bite.
-					</header>
-					</div>
-				<div class="container 50%">
-					<form action="#" method="post">
-						<div class="row uniform">
-							<div class="6u 12u$(small)">
-								<input name="name" id="name" value="" placeholder="Name" type="text">
-							</div>
-							<div class="6u$ 12u$(small)">
-								<input name="email" id="email" value="" placeholder="Email" type="email">
-							</div>
-							<div class="12u$">
-								<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
-							</div>
-							<div class="12u$">
-								<ul class="actions">
-									<li><input value="Send Message" class="special big" type="submit"></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-			</section>
--->
-		<!-- Five -->
-			<section id="five" class="wrapper style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>Well done, you made it to the bottom of the page.</h2>
-						<p>Here is a bonus useless trivia fact just for you: Semasia is the Greek word for meaning.</p>
-					</header>
-				</div>
-			</section>
-			
-			
-			
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<section class="links">
-						<div class="row">
-							<section class="3u 6u(medium) 12u$(small)">
-								<h3>About Semasia</h3>
-								<ul class="unstyled">
-									<li><a href="https://recruit.zoho.com/recruit/ViewJob.na?digest=6e7M24s.GN0k6yhVm3hnS3vL2Ge87pqiulIl1H.KoL4-&embedsource=Embed" target="_blank" onclick="trackOutboundLink('https://recruit.zoho.com/recruit/ViewJob.na?digest=6e7M24s.GN0k6yhVm3hnS3vL2Ge87pqiulIl1H.KoL4-&embedsource=Embed'); return false;">Company, Team & Careers</a></li>
-									<li><a href="#">Press & Beta Customers</a></li>
-									<li><a href="#">Technology & IP</a></li>
-								</ul>
-							</section>
-							<section class="3u 6u$(medium) 12u$(small)">
-								<h3>Semasia Products</h3>
-								<ul class="unstyled">
-									<li><a href="#">Semasia Chat Explorer</a></li>
-									<li><a href="#">Semasia Brand Observer</a></li>
-									<li><a href="#">Semasia Dimension Reducer</a></li>
-								</ul>
-							</section>
-							<section class="3u 6u(medium) 12u$(small)">
-								<h3>Sales</h3>
-								<ul class="unstyled">
-									<li><a href="#">Contact Sales</a></li>
-									<li><a href="#">Plans & Pricing</a></li>
-									<li><a href="#">Request a Free Demo or Trial</a></li>
-								</ul>
-							</section>
-							<section class="3u$ 6u$(medium) 12u$(small)">
-								<h3>Support</h3>
-								<ul class="unstyled">
-									<li><a href="#">Contact Support</a></li>
-									<li><a href="#">Feedback & Suggestions</a></li>
-								</ul>
-							</section>
-						</div>
-					</section>
-					<div class="row">
-						<div class="8u 12u$(medium)">
-							<ul class="copyright">
-								<li>&copy; Semasia 2014-2018. Built in New York City.</li>
-								<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-								<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
-							</ul>
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<ul class="icons">
-								<li>
-									<a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
-								</li>
-								<li>
-									<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
-								</li>
-								<li>
-									<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
-								</li>
-								<li>
-									<a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</footer>
+<!--div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"-->
+<div class="d-flex bd-highlight my-md-3 pl-md-3">
+  <!--div class="bg-danger mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-white text-center overflow-hidden"-->
+  <div class="bg-light w-50 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <h5 class="text-center">Who would<br>benefit<br>most?</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-center">Chief Information Officer<br>Chief Data Officer<br>Enterprise Data Managers<br>Enterprise Data Engineers<br>Data Governance Managers</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-center">Data Science Teams and Data Scientists<br>Data Engineers supporting Data Scientists<br>NLP Engineers<br>AI Engineers<br>Business Intelligence teams</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden text-center">
+          <a class="btn btn-outline-primary" href="#">Tell us about your role</a>
+  </div>
+</div>
 
-	</body>
+<!--div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"-->
+<div class="d-flex bd-highlight my-md-3 pl-md-3">
+  <!--div class="bg-danger mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-white text-center overflow-hidden"-->
+  <div class="bg-light w-50 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <h5 class="text-center">What's the<br>most relevant context?</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-center">Enterprise data lakes<br>already in place or in progress,<br>with or without structured data catalogs & MDM</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-center">Data science and AI projects<br>focused on text data<br>or mixing structured and text data</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden text-center">
+          <a class="btn btn-outline-primary" href="#">Tell us about your situation</a>
+  </div>
+</div>
+
+
+<!--div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"-->
+<div class="d-flex bd-highlight my-md-3 pl-md-3">
+  <!--div class="bg-danger mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-white text-center overflow-hidden"-->
+  <div class="bg-danger w-50 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <h5 class="text-white text-center">Without<br>Semasia</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-danger text-center">In most cases, text data is stored in a raw format or is sometimes indexed to be searchable. However, there are major limitations to such an approach: it's challenging to achieve hierarchy and grouping consistency between structured and unstructured data, and there is little to no flexibility to re-organize unstructured data.</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-danger text-center">Data preparation and labeling, and the subsequent feature engineering, are the most critical and time-consuming tasks of any data science project... especially so for unstructured data. When data is not pre-encoded, as is often the case, all these tasks happen on a project by project basis.</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-danger text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden text-center">
+          <a class="btn btn-outline-primary" href="#">Tell us about your frustrations</a>
+  </div>
+</div>
+
+<!--div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"-->
+<div class="d-flex bd-highlight my-md-3 pl-md-3">
+  <!--div class="bg-success mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-white text-center overflow-hidden"-->
+  <div class="bg-success w-50 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <h5 class="text-white text-center">With<br>Semasia</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-success text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+    <p class="small text-success text-center">Semasia can bring structure to text data using customizable organization principles that mirror the configuration of the data catalog. It can generate a structured data version of a text document that can be more productively ingested. Perhaps more critically, it unlocks the usefulness and value of a large data trove that was largely left untouched.</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-success text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden">
+      <p class="small text-success text-center">By integrating Semasia in your main unstructured data pipeline, highly detailed and reconfigurable labels are immediately available to data scientists. They can immediately explore potential features and avoid wasting precious time and costly resources processing information that will not be relevant to the final result.</p>
+  </div>
+  <!--div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-success text-center overflow-hidden"-->
+  <div class="bg-light w-100 bd-highlight mr-md-3 pt-3 px-3 pt-md-3 px-md-3 overflow-hidden text-center">
+    <a class="btn btn-outline-primary" href="#">Tell us about your goals</a>
+  </div>
+</div>
+
+<!-- SECTION - TRIAL -->
+
+<div class="position-relative overflow-hidden p-md-3 m-md-3 text-center bg-dark">
+  <div class="col-md-10 mx-auto my-auto">
+    <h2 class="display-6 font-weight-bold text-white" style="margin-bottom: 0px;">
+    <a name="trial3">Ready to explore further?</a></h2>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal my-md-3 pl-md-3">
+<div class="bg-light mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden">
+  <div class="my-1 p-1">
+    <img src ="images/Semasia_Logo_320X96.png"></img>
+    <p class="body"><br>What would your own data look like<br>after being processed by Semasia?<br>What entities would be detected?</p>
+      <p class="body">You're only a click away<br> from finding out.<br><br></p>
+      <a class="btn btn-outline-primary" href="#">Get your trial code</a>
+  </div>
+</div>
+</div>
+
+
+<!-- SECTION - ABOUT -->
+
+<div class="position-relative overflow-hidden p-md-3 m-md-3 text-center bg-dark">
+  <div class="col-md-10 mx-auto my-auto">
+    <h2 class="display-6 font-weight-bold text-white" style="margin-bottom: 0px;">
+    <a name="about">How Semasia came about</a></h2>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 pr-md-3 text-center">
+  <div class="bg-light py-3 px-3  px-md-3 text-center overflow-hidden">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+      <p class="body font-italic"><br>From survey verbatims to call center transcripts and social media conversations, our team has been at the forefront of text analytics for almost two decades.</p>
+      <p class="body font-italic">Over the last few years, we focused our efforts on the puzzling problem of word sense ambiguity and entity linking - which in turn, led to the development of technology that can process and organize large volume of unstructured text data such as Wikipedia.</p>
+      <p class="body font-italic">It eventually became apparent that these were in fact the two sides of a same coin... Semasia (the Greek word for "meaning") is a unique technological combination: on one hand, text analytics to bring out accurate, detailed meaning and on the other hand, a relationship graph that links and organizes this meaning.<br></p>
+      <p class="body font-italic">Semasia is headquartered in New York City, with team members in two slightly more exotic locations.</p>
+      <p class="body font-italic"></p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img src="images/logo_builtinnyc_200x80.png" width="200" height="80"></img>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="small text-muted" href="#features">Overview</a></li>
+        <li><a class="small text-muted" href="#">Entity Linking</a></li>
+        <li><a class="small text-muted" href="#">Structured Knowledge Graph</a></li>
+        <li><a class="small text-muted" href="#">Workflow Connectors</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Solutions</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="small text-muted" href="#solutions">Overview</a></li>
+        <li><a class="small text-muted" href="#">Data Cataloging</a></li>
+        <li><a class="small text-muted" href="#">Data Science</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="small text-muted" href="#about">Team</a></li>
+        <li><a class="small text-muted" href="#">Locations</a></li>
+        <li><a class="small text-muted" href="#">Privacy</a></li>
+        <li><a class="small text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="position-relative overflow-hidden p-md-3 text-center bg-light">
+    <small class="d-block mb-3 text-muted">&copy; 2017-2020 Semasia Software<br></small>
+      <small class="d-block text-muted">Google, Google Cloud, Google Cloud Natural Language are registered trademarks or service marks of Alphabet, Inc.<br>
+        Microsoft, Azure, Azure Cognitive Services are registered trademarks or service marks of Microsoft Corporation.</small>
+    </div>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
 </html>
